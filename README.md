@@ -6,7 +6,7 @@
 * чтобы собрать проект, введите команду ```gulp build --build``` (режим сборки)
 
 ## Демо верстки
-[Demo link](http://alexbolshakov.ru/spmipk/)
+[Demo link](http://alexbolshakov.ru/dfaktor/)
 
 ## Файловая структура
 
