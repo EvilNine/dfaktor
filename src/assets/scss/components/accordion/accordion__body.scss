@@ -1,8 +1,7 @@
 .accordion__body {
-    height: 0px;
+    opacity: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 500ms ease;
-    &-hidden {
-        visibility: hidden;
-    }
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
 }

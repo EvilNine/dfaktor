@@ -16,15 +16,21 @@
     &:hover {
         color: $primary;
     }
-    &-icon {
-        margin-left: 5px;
-        margin-top: 5px;
-        transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-    &-active {
+    &[aria-expanded='true'] {
         color: $primary;
         .accordion__trigger-icon  {
             transform: rotate(-180deg);
         }
+        & + .accordion__body {
+            opacity: 1;
+            max-height: var(--height);
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }
+    &-icon {
+        margin-left: 5px;
+        margin-top: 5px;
+        transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
