@@ -1,0 +1,8 @@
+.accordion__body {
+    height: 0px;
+    overflow: hidden;
+    transition: height 500ms ease;
+    &-hidden {
+        visibility: hidden;
+    }
+}
