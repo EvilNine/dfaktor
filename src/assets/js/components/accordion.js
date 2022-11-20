@@ -1,10 +1,11 @@
 const Accordion = (props) => {
     const items = document.querySelectorAll(props.btn);
     const itemBody = document.querySelectorAll(props.body);
-    itemBody.forEach( el => {
-        const contentHeight = el.querySelector(props.bodyContent).getBoundingClientRect().height;
-        el.style.setProperty("--height", `${contentHeight}px`);
-    });
+    
+    for (let i = 0; i < itemBody.length; i++) {
+        const contentHeight = itemBody[i].querySelector(props.bodyContent).getBoundingClientRect().height;
+        itemBody[i].style.setProperty("--height", `${contentHeight}px`);
+    };
     function toggleAccordion() {
         const itemToggle = this.getAttribute('aria-expanded');
         for (let i = 0; i < items.length; i++) {
