@@ -13,6 +13,9 @@
                 color: $primary;
             }
         }
+        &.active {
+            color: $primary;
+        }
     }
     &-icon {
         margin-right: 7px;

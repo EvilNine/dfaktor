@@ -1,4 +1,5 @@
 import Accordion from "./components/accordion.js";
+import preventLinksActions from "./components/preventLinksActions.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     Accordion({
@@ -6,4 +7,5 @@ document.addEventListener('DOMContentLoaded', function () {
         body:           '.accordion__body',
         bodyContent:    '.accordion__content'
     });
+    preventLinksActions();
 });
